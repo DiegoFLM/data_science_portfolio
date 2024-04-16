@@ -3,29 +3,61 @@ body{
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    font-size: 1.375rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the navigation text */
+    padding: 1rem 0; /* Adds vertical padding and removes horizontal padding */
+    margin-right: 1.25rem;
 }
 
 nav a {
-margin-right: 20px; /* Adjust the value to your preference */
+    margin-right: 2rem;
 }
 
-/* section, p, h1{
-    color: red;
-} */
+/* Media Query for small screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+    }
 
-main article{
-    color: red;
+    nav a {
+        margin-bottom: 0.5rem;
+    }
 }
 
-
-/* id */
-#about {
-    background-color: aqua;
+header {
+    text-align: center;
+    margin-bottom: 1.25rem;
 }
 
+article {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* class */
 .projects{
     font-weight: bolder;
     color: darkblue;
 }
+
+/* id */
+#about_me {
+    background-color: aqua;
+}
+
+#description {
+    flex: 1;
+}
+
+

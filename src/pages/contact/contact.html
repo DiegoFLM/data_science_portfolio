@@ -6,11 +6,26 @@
     <title>Contact me</title>
     <link rel="stylesheet" href="stylesContact.css">
     <script src="contactForm.js"></script>
+
+    <meta name="description" content="Contact me: Data science portfolio of 
+            Diego Ledesma">
+    <meta name="author" content="Diego Ledesma. GitHub: DiegoFLM">
+    <meta name="keywords" content="Data science, portfolio, 
+            Diego Ledesma, contact me, machine learning, email">
+    <link rel = "icon" href = "../../../public/assets/icons/favicon.png" 
+            type = "image/png" sizes = "16x16">
+    <link rel="stylesheet" href="../home/styles.css">
+
 </head>
 <body>
     
     <nav>
-        <a href = "../home/index.html">Home</a>
+        <a href = "../home/index.html">Home </a>
+        <a href = "../about/about.html">About me</a>
+        <a href = "https://github.com/DiegoFLM" target="_blank">GitHub</a>
+        <a href = "https://www.youtube.com/@diegofabianledesmamotta5139/videos"
+            target="_blank"> Videos </a>
+        <a href = "../contact/contact.html">Contact me</a>
     </nav>
 
     <header>
@@ -20,7 +35,7 @@
 
     <main>
         <section id="section-form-contact">
-            <form>
+            <form onsubmit="return sendData(event)">
                 <div>
                     <label for="name_id">Name:</label>
                     <input type="text" id="name_id" name="name" required>
@@ -37,6 +52,14 @@
                     
                 <button type="submit"> Submit </button>
             </form>
+            <div id="confirmation_message" style="display: none;" >
+                <p>Thank you for your message. I will get back to you 
+                    as soon as possible.</p>
+                <ul id="data_list">
+
+                </ul>
+
+            </div>
         </section>
     </main>
     
