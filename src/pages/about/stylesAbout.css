@@ -1,3 +1,8 @@
+header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,8 +11,26 @@ body{
     font-size: 1.375rem;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the navigation text */
+    padding: 1rem 0; /* Adds vertical padding and removes horizontal padding */
+}
+
 nav a {
-    margin-right: 1.25rem;
+    margin-right: 2rem;
+}
+
+/* Media Query for small screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stacks the nav items vertically */
+    }
+
+    nav a {
+        margin-bottom: 0.5rem; /* Adds a small margin to the bottom of each link */
+    }
 }
 
 article {
@@ -21,6 +44,11 @@ img {
     height: auto;
 }
 
+figcaption{
+    /*dark blue font*/
+    color: darkblue;
+}
+
 p {
     line-height: 2rem;
     max-width: 80%;
@@ -32,4 +60,9 @@ p {
 
 #about_me {
     background-color: aqua;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 1.25rem;
 }

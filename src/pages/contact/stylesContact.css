@@ -1,25 +1,37 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
+    font-size: 1.375rem;
 }
 
-header {
+/* header {
     text-align: center;
     font-size: larger;
     color: crimson;
-}
+} */
 
 nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the navigation text */
+    padding: 1rem 0; /* Adds vertical padding and removes horizontal padding */
 }
 
 nav a {
-    margin: 0 0.75rem;
-    font-size: larger;
-    text-decoration: none;
-    color: blue;
-    text-decoration: underline;
+    margin-right: 2rem;
+}
+
+/* Media Query for small screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stacks the nav items vertically */
+    }
+
+    nav a {
+        margin-bottom: 0.5rem; /* Adds a small margin to the bottom of each link */
+    }
 }
 
 main {
