@@ -1,37 +1,7 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    font-size: 1.375rem;
-}
-
-/* header {
+.contact-header {
     text-align: center;
     font-size: larger;
     color: crimson;
-} */
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the navigation text */
-    padding: 1rem 0; /* Adds vertical padding and removes horizontal padding */
-}
-
-nav a {
-    margin-right: 2rem;
-}
-
-/* Media Query for small screens */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column; /* Stacks the nav items vertically */
-    }
-
-    nav a {
-        margin-bottom: 0.5rem; /* Adds a small margin to the bottom of each link */
-    }
 }
 
 main {
@@ -39,18 +9,6 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0rem 4rem;
-}
-
-footer {
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    width: 100%;
-    background-color: crimson;
-    color: white;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
 }
 
 form{
@@ -99,4 +57,23 @@ button[type="submit"]:hover{
     padding: 2rem;
     border: 0.1rem solid #ccc;
     border-radius: 0.25rem;
+}
+
+#confirmation_message{
+    display: none;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 0.75rem; 
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#data_list{
+    list-style: none;
+    padding: 0;
+}
+
+#data_list li{
+    margin: 0.5rem 0;
 }
