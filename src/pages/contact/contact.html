@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="stylesContact.css">
-    <script src="contactForm.js"></script>
+    <script src="contactForm.js" defer></script>
 
-    <meta name="description" content="Contact me: Data science portfolio of 
-            Diego Ledesma">
+    <meta name="description" content="Contact me: Data science portfolio of Diego Ledesma">
     <meta name="author" content="Diego Ledesma. GitHub: DiegoFLM">
     <meta name="keywords" content="Data science, portfolio, 
             Diego Ledesma, contact me, machine learning, email">
@@ -18,23 +17,13 @@
 
 </head>
 <body>
-    <header>
-        <h1>Diego Ledesma</h1>
-        <h2>Data Scientist</h2>
-    </header>
-    <nav>
-        <a href = "../home/index.html">Home </a>
-        <a href = "../about/about.html">About me</a>
-        <a href = "https://github.com/DiegoFLM" target="_blank">GitHub</a>
-        <a href = "https://www.youtube.com/@diegofabianledesmamotta5139/videos"
-            target="_blank"> Videos </a>
-        <a href = "../contact/contact.html">Contact me</a>
-    </nav>
+    <iframe src="../../common/html/headerNav.html" 
+        style="height:11em; width:100%; border:none;" id="header_nav">
+    </iframe>
 
-    <header>
+    <div class="contact-header">
         <h1>Contact me</h1>
-    </header>
-
+    </div>
 
     <main>
         <section id="section-form-contact">
@@ -66,5 +55,8 @@
         </section>
     </main>
     
+    <iframe src="../../common/html/footer.html" 
+        style="height:5em; width:100%; border:none;">
+    </iframe>
 </body>
 </html>
