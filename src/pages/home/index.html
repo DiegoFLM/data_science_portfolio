@@ -13,6 +13,7 @@
             type = "image/png" sizes = "16x16">
         
         <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
     </head>
 
 
@@ -125,10 +126,25 @@
                     </ul>
                 </aside>
             </section>
+
+            <section id="comments" class="section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 id="name-card-header"></h2>
+                        <p id="email-card-header"></p>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </section>
         </main>
 
         <iframe src="../../common/html/footer.html" 
             style="height:5em; width:100%; border:none;">
         </iframe>
+
+        <script>
+            fetchComments();
+        </script>
     </body>
 </html>

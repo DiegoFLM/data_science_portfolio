@@ -52,3 +52,44 @@ img {
 #description {
     flex: 1;
 }
+
+
+/*card*/
+#comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff7f7;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+}
+
+#name-card-header{
+    color: crimson;
+    margin-left: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#email-card-header{
+    color: #333;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.card-body{
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}

@@ -12,15 +12,17 @@ function sendData(event){
 
     let confirmationMessage = document.getElementById('confirmation_message');
     confirmationMessage.style.display = 'block';
+    
+    let dataTable = document.getElementById('data_table');
 
-    let dataList = document.getElementById('data_list');
-    dataList.innerHTML = '';
-
+    let tr = document.createElement('tr');
     for (let key in data){
-        let li = document.createElement('li');
-        li.textContent = key + ': ' + data[key];
-        dataList.appendChild(li);
+        let td = document.createElement('td');
+        td.textContent = data[key];
+        tr.appendChild(td);
     }
+    dataTable.appendChild(tr);
+
 
     // hide the form
     let form = document.querySelector('form');
