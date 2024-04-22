@@ -36,23 +36,21 @@ nav a {
 }
 
 /*footer*/
-/* footer {
+footer {
     position: fixed;
     display: flex;
     bottom: 0;
     width: 100%;
-    background-color: crimson;
+    background-color: #222;
     color: white;
     height: 4rem;
     justify-content: center;
     align-items: center;
-} */
-
-footer{
-    text-align: center;
-    /* margin-bottom: 1.25rem; */
-
-    background-color: #222;
-    padding: 2rem;
-    color: #fff;
 }
+
+/* footer{
+    text-align: center;
+    background-color: #222;
+    padding: 0rem;
+    color: #fff;
+} */
