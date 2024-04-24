@@ -43,13 +43,23 @@
                 </div>
                     
                 <button type="submit"> Submit </button>
-            </form>
-            <div id="confirmation_message" style="display: none;" >
-                <p>Thank you for your message. I will get back to you 
+                <p id="confirmation-message" style="display: none;">
+                    Thank you for your message. 
+                    I will get back to you 
                     as soon as possible.
                 </p>
+            </form>
+        </section>
+         
+        <section>
+            <button id="button_show_comments" onclick="showComments()">Show comments</button>
+        </section>
+
+        <section id="all-messages">
+            <div id="comments-section" style="display: none;" >
                 <table id="data_table">
                     <tr>
+                        <th>Id</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Message</th>

@@ -101,3 +101,18 @@ tr:hover {
     background-color: #e9e9e9; /* Color for row highlight on mouse hover */
 }
 
+#button_show_data{
+    background-color: green;
+    color: white;
+    font-size: medium;
+    padding: 0.625rem;
+    border: none;
+    cursor: pointer;
+    max-width: 25rem;
+}
+
+#button_show_data:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
