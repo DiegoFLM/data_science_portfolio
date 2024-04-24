@@ -55,7 +55,8 @@ img {
 
 
 /*card*/
-#comments{
+
+/* #comments{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,4 +93,23 @@ img {
 .card-body{
     padding: 1rem;
     border-radius: 0 0 1rem 1rem;
+} */
+
+/*end card*/
+
+
+/*card with bootstrap*/
+.section{
+    padding: 1rem;
+}
+
+div.card-header{
+    background-color: #efe1f0;
+}
+
+.section-title{
+    width: 100%;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 1rem;
 }
