@@ -1,0 +1,17 @@
+{
+  "name": "project_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vercel": "^34.1.2",
+    "vite": "^5.2.10"
+  }
+}
