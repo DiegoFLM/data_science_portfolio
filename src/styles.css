@@ -82,13 +82,13 @@ div.card-header{
 }
 
 
-body{
+html body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     font-size: 1.375rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 article {
@@ -100,6 +100,14 @@ article {
 img {
     max-width: 100%;
     height: auto;
+    /* centered and with padding */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+figcaption{
+    color: darkblue;
 }
 
 #description {
@@ -108,5 +116,9 @@ img {
 
 #about_me {
     background-color: aqua;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.375rem;
 }
 
