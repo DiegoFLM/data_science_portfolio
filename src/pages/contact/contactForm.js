@@ -1,6 +1,7 @@
 "use strict";
 
 function sendData(event) {
+    console.log("Sending data")
     event.preventDefault();
     let name = document.getElementById('name_id').value;
     let email = document.getElementById('email_id').value;
@@ -15,7 +16,7 @@ function sendData(event) {
     console.log(data)
 
     // Send data to the server using fetch API
-    fetch('http://localhost:3000/', {
+    fetch('https://data-science-portfolio-server-side.vercel.app/', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
@@ -49,7 +50,8 @@ form.reset();
 
 
 function showComments(){
-    fetch('http://localhost:3000/', {
+    console.log("Showing comments")
+    fetch('https://data-science-portfolio-server-side.vercel.app/', {
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json', 

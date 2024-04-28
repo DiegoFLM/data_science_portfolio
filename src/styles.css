@@ -1,27 +1,3 @@
-header {
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    font-size: 1.375rem;
-}
-
-article {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .video-container {
     position: relative;
     width: 90%; 
@@ -42,15 +18,6 @@ img {
 .projects{
     font-weight: bolder;
     color: darkblue;
-}
-
-/* id */
-#about_me {
-    background-color: aqua;
-}
-
-#description {
-    flex: 1;
 }
 
 
@@ -113,3 +80,45 @@ div.card-header{
     text-align: center;
     margin-bottom: 1rem;
 }
+
+
+html body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.375rem;
+    max-width: 100%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* centered and with padding */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+figcaption{
+    color: darkblue;
+}
+
+#description {
+    flex: 1;
+}
+
+#about_me {
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.375rem;
+}
+
