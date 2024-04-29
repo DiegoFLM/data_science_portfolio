@@ -14,9 +14,6 @@
         <link rel="stylesheet" href="styles.css">
         <script src="app.js"></script>
 
-        <!-- Bootstrap -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
 
 
@@ -29,7 +26,7 @@
             <section>
                 <article id="about_me">
                     <figure>
-                        <img src="assets/images/diego_headshot.jpg" width="128" alt="--logo--"> 
+                        <img src="assets/images/diego_headshot.jpg" width="128" alt="--img--"> 
                         <figcaption></figcaption>
                     </figure>
                     <p id="description">
@@ -45,49 +42,190 @@
             </section>
 
             <section>
-                <h1>PROJECTS</h1>
-                <aside>
-                    <ul>
-                        <li> 
-                            <a href="https://github.com/DiegoFLM/rabits_and_foxes" target="_blank">
-                                Rabbits & Foxes (Ecologic Simmulation)
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="https://github.com/DiegoFLM/ML-LoLGameWinnerPrediction" target="_blank">
-                                Game Winner Prediction with Machine Learning (League of Legends)
-                            </a>
-                        </li><li> 
-                            <a href="https://github.com/DiegoFLM/Search-Algorithms" target="_blank">
-                                Search Algorythms with GUI (C++)
-                            </a>
-                        </li>
-                        </li><li> 
-                            <a href="https://github.com/DiegoFLM/optimization_with_dynamic_programming" target="_blank">
-                                Assembly Company Optimization (Dynamic Programming)
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="https://github.com/DiegoFLM/n_queens_problem_python" target="_blank">
-                                N-Queens Problem -Evolutive Algorithm- (Python)
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="https://github.com/DiegoFLM/N-queens-problem" target="_blank">
-                                N-Queens Problem -Evolutive Algorithm- (Ruby)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/DiegoFLM/HungryKnights" target="_blank">
-                                Hungry Knights: Minimax algorithm aplied to a chess knights game with ML (C++)
-                            </a>
-                        </li>
-                    </ul>
+                <div class="section-title">
+                    <h1>PROJECTS</h1>
+                </div>
+
+                <aside id="project-cards">
+
+                    <a class="project" href="https://github.com/DiegoFLM/rabits_and_foxes" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        Rabbits & Foxes
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/rabbits-foxes-plot.png" width="100%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Evolutive computing, ecologic simmulation, Lotka-Volterra model.
+                                    </p>
+                                    <p class="project-tools">
+                                        Python.
+                                    </p>
+                                    <p class="project-description">
+                                        This is an ecologic simulation of a discrete system in which rabbits 
+                                        and foxes interact. Rabbits who survive and foxes that manage to eat 
+                                        rabbits breed.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    
+                    <a class="project" href="https://github.com/DiegoFLM/ML-LoLGameWinnerPrediction" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        Game Winner Prediction (LoL)
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/confussion-matrix.png" width="100%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Machine learning, Neural networks, prediction model.
+                                    </p>
+                                    <p class="project-tools">
+                                        Python, Scikit-learn.
+                                    </p>
+                                    <p class="project-description">
+                                        18 attributes from 50,000 games of League of Legends were used to
+                                        train a neural network that predicts the winner of the game.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a class="project" href="https://github.com/DiegoFLM/Search-Algorithms" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        Search Algorythms with GUI
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/labyrinth.png" width="100%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Machine learning, Search games, optimal solution. 
+                                    </p>
+                                    <p class="project-tools">
+                                        C++, QT(GUI).
+                                    </p>
+                                    <p class="project-description">
+                                        Implemented algorythms for solving a labyrinth: Breadth First Search, 
+                                        Depth First Search, Uniform Cost Search, Greedy Search, A* Search.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    
+                    <a class="project" href="https://github.com/DiegoFLM/optimization_with_dynamic_programming" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        Assembly Company Optimization
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/dynamic-programming.png" width="100%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Dynamic programing, optimal solution. 
+                                    </p>
+                                    <p class="project-tools">
+                                        Python.
+                                    </p>
+                                    <p class="project-description">
+                                        Optimization problem of an assembly company solved with dynamic 
+                                        programming.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>      
+
+                    <a class="project" href="https://github.com/DiegoFLM/n_queens_problem_python" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        N-Queens Problem -Evolutive Algorithm
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/n-queens-problem.png" width="80%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Evolutive computing, combinatory problem, N-Queens problem. 
+                                    </p>
+                                    <p class="project-tools">
+                                        Python.
+                                    </p>
+                                    <p class="project-description">
+                                        Evolutive computing used to find multiple solutions to the generalized
+                                        N-Queens problem.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>   
+                    
+                    <a class="project" href="https://github.com/DiegoFLM/HungryKnights" target="_blank">
+                        <section class="section">
+                            <div class="project-card" style="width: 20rem;">
+                                <div class="card-header">
+                                    <h2 class="name-card-header card-title">
+                                        Minimax algorithm with chess knights.
+                                    </h2>
+                                    <figure>
+                                        <img src="assets/images/chess-knight.png" width="80%" alt="--img--"> 
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <p class="project-keywords">
+                                        Minimax, chess, optimization. 
+                                    </p>
+                                    <p class="project-tools">
+                                        C++, QT(GUI).
+                                    </p>
+                                    <p class="project-description">
+                                        A game in which two knights play against each other for eating 
+                                        the most amount of food. One of the knights is controlled by the
+                                        minimax algorithm.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+
                 </aside>
             </section>
 
+
             <section>
-                <h1>Science</h1>
+                <div class="section-title">
+                    <h1>Science</h1>
+                </div>
                 <h2>mathematics</h2>
                 <aside>
                     <ul>
@@ -107,8 +245,11 @@
                 </aside>
             </section>
 
+            
             <section>
-                <h1>Links</h1>
+                <div class="section-title">
+                    <h1>Links</h1>
+                </div>
                 <aside>
                     <ul>
                         <li>
@@ -132,33 +273,6 @@
                 </aside>
             </section>
 
-            <!-- <section id="comments" class="section">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        <h2 id="name-card-header"  class="card-title"></h2>
-                        <p id="email-card-header" clas="card-subtitle"></p>
-                    </div>
-                    <div class="card-body">
-                    </div>
-                </div>
-            </section> -->
-
-
-            <div class="section-title">
-                <h1 id="comments-title">Comments</h1>
-            </div>
-            <section id="comments" class="section d-flex justify-content-center" style="padding: 1rem;">
-                <div class="card" style="width: 18rem; background-color: #eededb;">
-                    <div class="card-header">
-                        <h2 id="name-card-header" class="card-title" style="color: green;">Card Title</h2>
-                        <p id="email-card-header" class="card-subtitle" style="color: blue;">Card Subtitle</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </section>
-            
 
         </main>
 
@@ -167,10 +281,11 @@
         </iframe>
 
         <script>
-            fetchComments();
+            document.addEventListener('DOMContentLoaded', function() {
+                fetchComments();
+                equalizeHeights();
+            });
         </script>
 
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

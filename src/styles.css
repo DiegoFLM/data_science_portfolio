@@ -14,75 +14,122 @@
 }
 
 
-/* class */
+
+
 .projects{
     font-weight: bolder;
     color: darkblue;
 }
 
+#project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+
+/* Every <a> inside the component with id="project-cards" */
+#project-cards a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /*card*/
 
-/* #comments{
+#comments{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.card{
+.card, .project-card{
     display: flex;
     flex-direction: column;
-    background-color: #fff7f7;
+    background-color: #d3ecd0;
     border-radius: 0.25rem;
-    padding: 1rem;
+    padding: 0rem;
     margin-bottom: 1.25rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
     width: 25%;
     text-align: center;
+    border-radius: 1rem 1rem 1rem 1rem;    
 }
 
-#name-card-header{
+.project-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    min-height: 40rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+
+.name-card-header{
     color: crimson;
-    margin-left: 2rem;
+    margin-left: 0rem;
     border-radius: 1rem 1rem 0 0;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-#email-card-header{
-    color: #333;
-    margin-left: 2rem;
+.email-card-header{
+    color: #4b4949;
+    margin-left: 0rem;
     font-size: 1.5rem;
     font-style: italic;
 }
 
+.card-header{
+    background-color: #d2d2fa;
+    min-height: 22rem;
+}
+
 .card-body{
     padding: 1rem;
-    border-radius: 0 0 1rem 1rem;
-} */
+    /* border-radius: 0 0 1rem 1rem; */
+    background-color: #d3ecd0;
+
+}
+
+
+.card-subtitle, .project-keywords{
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.project-tools{
+    color: rgb(128, 0, 36);
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.project-description{
+    /* justify text */
+    text-align: justify;
+}
 
 /*end card*/
 
 
-/*card with bootstrap*/
-.section{
-    padding: 1rem;
-}
-
-div.card-header{
-    background-color: #efe1f0;
-}
 
 .section-title{
     width: 100%;
-    color: crimson;
+    color: green;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 
-html body{
+body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -100,10 +147,6 @@ article {
 img {
     max-width: 100%;
     height: auto;
-    /* centered and with padding */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 figcaption{
@@ -116,9 +159,5 @@ figcaption{
 
 #about_me {
     background-color: aqua;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 2rem;
-    font-size: 1.375rem;
 }
 
