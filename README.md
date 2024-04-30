@@ -36,7 +36,7 @@ To set up this project locally, follow the instructions below:
 
 2. **Run the project:**
    
-   Since this is a static site, you can open the `index.html` directly in your browser or set up a local server using Python or another simple HTTP server:
+   Since this is a static site, you can open the `index.html` directly in your browser or set up a local server:
 
    ```bash
    # You need to have npm
