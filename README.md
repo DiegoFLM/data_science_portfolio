@@ -1,58 +1,147 @@
 # Data Science Portfolio - Diego Ledesma
 
-Welcome to the repository for my personal Data Science Portfolio, which showcases my projects, educational background, and technical skills. This portfolio is designed to demonstrate my proficiency in data science, machine learning, and my ability to apply these skills to solve real-world problems.
+Professional data science portfolio showcasing ML projects with interactive demos, powered by FastAPI and Next.js.
 
-## Features
+## 🎯 Overview
 
-- **About Me**: Learn about my background, passions, and the technical skills that I bring to the field of data science.
-- **Projects**: Explore the GitHub repositories of my key projects.
-- **Education**: A summary of my formal education and continuous learning in software engineering and data science.
-- **Experience**: Highlighting my practical experience and contributions as a data scientist.
-- **Contact Information**: Ways to connect with me professionally, including email and links to my GitHub and YouTube channel.
+This repository contains a modern, production-ready data science portfolio featuring:
+- **Interactive ML Demos**: Try live model predictions directly in your browser
+- **Project Showcase**: Detailed case studies with metrics, methodology, and results
+- **Modern Tech Stack**: FastAPI backend + Next.js frontend
+- **Production ML**: Real scikit-learn models with REST API endpoints
+- **Deployment Ready**: Configured for Railway/Render (backend) and Vercel (frontend)
 
-## Technologies Used
+## 🚀 Quick Start
 
-- **HTML5**
-- **CSS3**: For responsive layout and styling.
-- **JavaScript**: For dynamic content interaction.
-- **MongoDB Atlas**: Backend database to store contact form entries.
-- **Vite**: The build tool used for deployment.
-- **Vercel**: Platform for deployment.
+**Backend (Terminal 1):**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+python create_sample_models.py
+uvicorn app.main:app --reload
+```
 
-## Live Demo
+**Frontend (Terminal 2):**
+```bash
+cd frontend
+npm install
+cp .env.example .env.local
+npm run dev
+```
 
-You can view the live demo of the portfolio at [Data Science Portfolio](https://data-science-portfolio-livid.vercel.app/).
+Visit http://localhost:3000 🎉
 
-## Local Development
+📖 **Full Setup Guide**: See [QUICKSTART.md](QUICKSTART.md) or [SETUP.md](SETUP.md)
 
-To set up this project locally, follow the instructions below:
+## 🏗️ Architecture
 
-1. **Clone the repository:**
+```
+├── backend/          # FastAPI + scikit-learn
+│   ├── app/
+│   │   ├── main.py           # FastAPI app
+│   │   ├── routers/          # API endpoints
+│   │   ├── models/           # ML models & schemas
+│   │   └── data/             # Projects data
+│   └── requirements.txt
+│
+├── frontend/         # Next.js 14 + TypeScript + Tailwind
+│   ├── app/                  # Pages (App Router)
+│   ├── components/           # React components
+│   └── lib/                  # API client
+│
+└── src/              # Legacy static site (preserved)
+```
 
-    ```bash
-    git clone https://github.com/DiegoFLM/data_science_portfolio.git
-    cd data_science_portfolio
-    ```
+## ✨ Features
 
-2. **Run the project:**
-   
-   Since this is a static site, you can open the `index.html` directly in your browser or set up a local server:
+### Backend (FastAPI)
+- ✅ RESTful API for projects and predictions
+- ✅ Three sample ML models (churn, image classification, time series)
+- ✅ Automatic API documentation (Swagger/ReDoc)
+- ✅ CORS configured for frontend
+- ✅ Easy to deploy on Railway or Render
 
-   ```bash
-   # You need to have npm
-   npm i
-   npm run dev
-   ```
+### Frontend (Next.js)
+- ✅ Server-side rendering for fast page loads
+- ✅ Responsive design (mobile-first)
+- ✅ Interactive model demos with real-time predictions
+- ✅ TypeScript for type safety
+- ✅ Tailwind CSS for modern styling
+- ✅ Optimized for Vercel deployment
 
+## 📊 Featured Projects
 
+The portfolio includes 4 sample ML projects:
+1. **Customer Churn Prediction** - 89% accuracy using ensemble methods
+2. **Medical Image Classification** - 94% accuracy with CNNs
+3. **Energy Demand Forecasting** - LSTM time series model
+4. **Sentiment Analysis** - Real-time NLP pipeline
 
-   
-## Repository Structure
+Each project includes:
+- Problem statement and methodology
+- Key metrics and results
+- Interactive demo (where applicable)
+- GitHub link
 
-- **index.html**: Main HTML file for the portfolio.
-- **about.html**: More detailed information about my background.
-- **styles.css**: CSS file for styling the portfolio.
-- **app.js**: JavaScript file handling the dynamic parts of the portfolio.
-- **/assets**: Contains images and other assets used in the project.
-- **/pages**: Contains the code for the other pages of the portfolio.
-- **/common**: Reusable code for the website such as header, nav and footer. 
+## 🌐 Live Demos
+
+- **API Documentation**: http://localhost:8000/api/docs (when backend is running)
+- **Current Static Site**: [data-science-portfolio-livid.vercel.app](https://data-science-portfolio-livid.vercel.app/)
+
+## 📚 Documentation
+
+- [QUICKSTART.md](QUICKSTART.md) - Get running in 5 minutes
+- [SETUP.md](SETUP.md) - Complete setup and deployment guide
+- [backend/README.md](backend/README.md) - Backend API documentation
+- [frontend/README.md](frontend/README.md) - Frontend documentation
+
+## 🚢 Deployment
+
+### Backend
+- **Railway**: Auto-deploy from GitHub, set root to `backend`
+- **Render**: Build cmd: `pip install -r requirements.txt && python create_sample_models.py`
+
+### Frontend
+- **Vercel**: Import from GitHub, set root to `frontend`
+- Set `NEXT_PUBLIC_API_URL` to your deployed backend URL
+
+See [SETUP.md](SETUP.md) for detailed deployment instructions.
+
+## 🛠️ Tech Stack
+
+**Backend:**
+- FastAPI
+- Python 3.9+
+- scikit-learn
+- Pydantic
+- uvicorn
+
+**Frontend:**
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+
+## 📝 Customization
+
+1. **Add your projects**: Edit `backend/app/data/projects.json`
+2. **Update personal info**: Edit `frontend/app/page.tsx`
+3. **Add your ML models**: See `backend/create_sample_models.py`
+4. **Styling**: Customize `frontend/tailwind.config.ts`
+
+## 🤝 Contributing
+
+This is a personal portfolio, but feel free to fork and adapt for your own use!
+
+## 📄 License
+
+MIT License - feel free to use this as a template for your own portfolio.
+
+---
+
+## 🗂️ Legacy Static Site
+
+The original static HTML/CSS/JS portfolio is preserved in the root directory (`index.html`, `src/`, etc.). The new FastAPI + Next.js version is in `backend/` and `frontend/` directories. 

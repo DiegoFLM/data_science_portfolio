@@ -1,0 +1,102 @@
+[
+  {
+    "id": "customer-churn-prediction",
+    "title": "Customer Churn Prediction",
+    "shortDescription": "ML model predicting customer churn with 89% accuracy using ensemble methods",
+    "description": "Built a production-ready customer churn prediction system that analyzes customer behavior patterns to identify at-risk customers. The model processes historical transaction data, engagement metrics, and demographic information to predict churn probability.",
+    "image": "/images/churn-prediction.jpg",
+    "icon": "📊",
+    "metrics": {
+      "accuracy": "89%",
+      "recall": "84%",
+      "customers_analyzed": "100K+"
+    },
+    "techStack": ["Python", "scikit-learn", "XGBoost", "FastAPI", "Docker", "PostgreSQL"],
+    "problemStatement": "Telecom companies lose billions annually due to customer churn. Identifying at-risk customers early enables targeted retention strategies.",
+    "methodology": "Implemented a two-stage ensemble approach combining Random Forest and Gradient Boosting. Features were engineered from customer interaction data, usage patterns, and support tickets. Used SMOTE for handling class imbalance.",
+    "results": [
+      "Achieved 89% accuracy and 84% recall on test set",
+      "Reduced false negatives by 23% compared to baseline",
+      "Model deployed to production serving 1000+ predictions/day",
+      "Contributed to 15% reduction in churn rate"
+    ],
+    "githubUrl": "https://github.com/yourusername/churn-prediction",
+    "demoAvailable": true,
+    "modelEndpoint": "churn"
+  },
+  {
+    "id": "image-classification-cnn",
+    "title": "Medical Image Classification",
+    "shortDescription": "Deep learning model for classifying medical images with 94% accuracy",
+    "description": "Developed a convolutional neural network for classifying medical images across 5 disease categories. The model uses transfer learning with ResNet50 and achieves high accuracy while being optimized for inference speed.",
+    "image": "/images/medical-classification.jpg",
+    "icon": "🏥",
+    "metrics": {
+      "accuracy": "94%",
+      "f1_score": "0.92",
+      "inference_time": "45ms"
+    },
+    "techStack": ["Python", "PyTorch", "FastAPI", "Docker", "AWS S3", "MLflow"],
+    "problemStatement": "Manual classification of medical images is time-consuming and prone to human error. An automated system can assist radiologists in faster, more accurate diagnosis.",
+    "methodology": "Fine-tuned ResNet50 on a dataset of 50,000 medical images. Applied data augmentation, class weighting, and implemented attention mechanisms for interpretability. Used mixed-precision training for efficiency.",
+    "results": [
+      "94% classification accuracy across 5 disease categories",
+      "F1-score of 0.92, outperforming baseline by 8%",
+      "Inference time of 45ms per image on CPU",
+      "Model integrated into hospital diagnostic workflow"
+    ],
+    "githubUrl": "https://github.com/yourusername/medical-image-classifier",
+    "demoAvailable": true,
+    "modelEndpoint": "image_classifier"
+  },
+  {
+    "id": "time-series-forecasting",
+    "title": "Energy Demand Forecasting",
+    "shortDescription": "Time series model for predicting energy demand with LSTM networks",
+    "description": "Created a time series forecasting system that predicts energy demand 24 hours ahead using LSTM neural networks. The model incorporates weather data, historical usage patterns, and calendar features.",
+    "image": "/images/energy-forecasting.jpg",
+    "icon": "⚡",
+    "metrics": {
+      "mape": "5.2%",
+      "rmse": "12.3 MW",
+      "forecast_horizon": "24h"
+    },
+    "techStack": ["Python", "TensorFlow", "Pandas", "FastAPI", "Redis", "TimescaleDB"],
+    "problemStatement": "Accurate energy demand forecasting is crucial for grid stability and cost optimization. A 24-hour forecast enables better resource allocation and prevents outages.",
+    "methodology": "Built a multi-variate LSTM model with attention mechanism. Features include historical demand, temperature, humidity, day of week, holidays, and special events. Used sliding window approach for training.",
+    "results": [
+      "Mean Absolute Percentage Error of 5.2%",
+      "RMSE of 12.3 MW on test set",
+      "Successfully predicts demand spikes with 87% accuracy",
+      "Deployed to production, generating forecasts every hour"
+    ],
+    "githubUrl": "https://github.com/yourusername/energy-forecasting",
+    "demoAvailable": true,
+    "modelEndpoint": "time_series"
+  },
+  {
+    "id": "nlp-sentiment-analysis",
+    "title": "Real-time Sentiment Analysis",
+    "shortDescription": "NLP pipeline for analyzing customer feedback sentiment at scale",
+    "description": "Built a real-time sentiment analysis system processing customer reviews and social media mentions. Uses transformer-based models for nuanced sentiment detection across multiple languages.",
+    "image": "/images/sentiment-analysis.jpg",
+    "icon": "💬",
+    "metrics": {
+      "accuracy": "91%",
+      "throughput": "1000 texts/sec",
+      "languages": "5"
+    },
+    "techStack": ["Python", "Transformers", "FastAPI", "Kafka", "Docker", "Elasticsearch"],
+    "problemStatement": "Companies receive thousands of customer reviews daily. Manual analysis is impossible at scale. Automated sentiment analysis enables quick response to customer concerns.",
+    "methodology": "Fine-tuned DistilBERT on domain-specific data. Implemented batch processing for high throughput. Built multi-language support using multilingual models. Deployed with Kafka for stream processing.",
+    "results": [
+      "91% accuracy on multi-class sentiment classification",
+      "Processing throughput of 1000 texts per second",
+      "Support for 5 languages with minimal accuracy drop",
+      "Reduced manual review time by 85%"
+    ],
+    "githubUrl": "https://github.com/yourusername/sentiment-analysis",
+    "demoAvailable": false,
+    "modelEndpoint": null
+  }
+]
