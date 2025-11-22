@@ -93,10 +93,20 @@ Each project includes:
 
 ## 📚 Documentation
 
-- [QUICKSTART.md](QUICKSTART.md) - Get running in 5 minutes
-- [SETUP.md](SETUP.md) - Complete setup and deployment guide
+### Getting Started
+- **[QUICKSTART.md](QUICKSTART.md)** - Get running in 5 minutes
+- **[SETUP.md](SETUP.md)** - Complete setup and deployment guide
+
+### Customization & Production Guides
+- **[Adding Your Projects](docs/ADDING_PROJECTS.md)** - Add real ML projects with images and descriptions
+- **[Deploying ML Models](docs/ADDING_MODELS.md)** - Create interactive demos with your trained models
+- **[Adding Visualizations](docs/ADDING_VISUALIZATIONS.md)** - Add Plotly charts and interactive plots
+- **[Production Deployment](docs/DEPLOYMENT.md)** - Deploy to Railway/Render and Vercel
+
+### API & Component Documentation
 - [backend/README.md](backend/README.md) - Backend API documentation
 - [frontend/README.md](frontend/README.md) - Frontend documentation
+- [docs/README.md](docs/README.md) - Complete documentation index
 
 ## 🚢 Deployment
 
@@ -127,10 +137,29 @@ See [SETUP.md](SETUP.md) for detailed deployment instructions.
 
 ## 📝 Customization
 
-1. **Add your projects**: Edit `backend/app/data/projects.json`
-2. **Update personal info**: Edit `frontend/app/page.tsx`
-3. **Add your ML models**: See `backend/create_sample_models.py`
-4. **Styling**: Customize `frontend/tailwind.config.ts`
+Ready to make this portfolio your own? Start here:
+
+1. **Add Your Projects**: See [docs/ADDING_PROJECTS.md](docs/ADDING_PROJECTS.md)
+   - Edit `backend/app/data/projects.json` with your project details
+   - Add project images to `frontend/public/images/`
+
+2. **Deploy Your ML Models**: See [docs/ADDING_MODELS.md](docs/ADDING_MODELS.md)
+   - Save trained models to `backend/app/models/saved/`
+   - Create prediction endpoints for interactive demos
+
+3. **Add Visualizations**: See [docs/ADDING_VISUALIZATIONS.md](docs/ADDING_VISUALIZATIONS.md)
+   - Install Plotly or Recharts
+   - Create interactive charts and dashboards
+
+4. **Update Personal Info**: Edit `frontend/app/page.tsx`
+   - Name, bio, tagline, contact information
+   - Tech stack and featured skills
+
+5. **Customize Styling**: Edit `frontend/tailwind.config.ts`
+   - Color schemes and themes
+   - Fonts and spacing
+
+**Quick Reference**: See [docs/README.md](docs/README.md) for complete documentation
 
 ## 🤝 Contributing
 
